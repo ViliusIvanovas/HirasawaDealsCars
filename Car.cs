@@ -1,14 +1,7 @@
-
 class Car
 {
-    public Car(string s)
+    public Car(List<carList>)
     {
     
     }
-    }
-    public void Drive()
-    {
-
-    }
-
 }
