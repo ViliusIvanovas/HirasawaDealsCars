@@ -1,3 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿//States the facts as writeline command
 Console.WriteLine("Hirasawa, our leader!");
-    
+
