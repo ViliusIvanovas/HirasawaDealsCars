@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "XYW4rDSXdqDxRS/eAccNxeGkCo+L62QSYuhCTW5jlS5YVkb/B7PrjuupSUqxHjCa+r3MIWCXGHRgtWXr2UvuTQ==",
+  "dgSpecHash": "P4p9+KO20Q9fnsv0UYgH0FreaMDTZzQVDxGShEFMnan4Z040kShndJCaPVg8l6Y8iZWdWxnt7O0LRuJadRSdxw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\caspe\\Desktop\\Program\\HirasawaDealsCars\\HirasawaDealsCars.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/viliusi/OneDrive/Gymnasium/2g/Programming/C＃/GitHub/HirasawaDealsCars/HirasawaDealsCars.csproj",
+  "expectedPackageFiles": [
+    "/home/viliusi/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.9/microsoft.aspnetcore.app.ref.6.0.9.nupkg.sha512"
+  ],
   "logs": []
 }
