@@ -1,5 +1,5 @@
 
-class Car
+/*class Car
 {
     public Car(string s)
     {
@@ -14,3 +14,5 @@ class Car
     }
 
 }
+
+*/
