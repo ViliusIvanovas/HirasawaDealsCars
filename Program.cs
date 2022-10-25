@@ -24,9 +24,10 @@ By using messages.Add, we can define the messages we want to send. Once we're do
 we simply call the Message function to write the messages.*/
 void Message()
 {
+Console.Clear();
 foreach(string Item in messages){
     Console.WriteLine(Item);
-    Thread.Sleep(400);
+    Thread.Sleep(1000);
 }
 Console.WriteLine("------------------------------\n");
 messages.Clear();
@@ -38,6 +39,7 @@ messages.Clear();
 
 
 #region Story
+Console.Title = "Parking Lot";
 messages.Add("Finally, after what feels like two years of pilgrimage, you have arrived.");
 messages.Add("The car shop stands before you: an imposing block of concrete, large display windows tracing its clean walls.");
 messages.Add("Now, you need only walk in the door... (Press W)");
@@ -52,10 +54,33 @@ Console.Clear();
 Console.Title = "1984 Cars";
 
 messages.Add("Welcome to 1984 Cars!");
-messages.Add("2 2");
-messages.Add("3 3");
+messages.Add("My name's Mr. Johnson, and I'm here to help you pick the best car for your needs!");
+messages.Add("And what might your name be?");
 Message();
 
+string userName = Console.ReadLine(); 
+
+messages.Add("Nice to meet you, " + userName + "!");
+messages.Add("We've got some of the finest cars on show in our model room! Would you like to see it?\n(Press W to accept, or D to decline)");
+Message();
+
+if (Console.ReadKey().Key == ConsoleKey.W)
+{
+    Console.Clear();
+    Console.Title = "In a Model Room";
+
+    messages.Add("And here we are, the model room!");
+    Message();
+}
+
+if (Console.ReadKey().Key == ConsoleKey.D)
+{
+    messages.Add("I do not understand. You went all the way in here, just to reject my benevolent offer?!");
+    messages.Add("For this, you'll pay.");
+    messages.Add("(His hand moves to his left pocket, and he pulls out his MIBURI laser gun.");
+    messages.Add("A \"pew\" is the last thing you hear before falling to the ground...");
+    Message();
+}
 
 Console.ReadLine();
 #endregion
