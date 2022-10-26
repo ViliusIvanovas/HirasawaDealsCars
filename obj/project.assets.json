@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "/home/viliusi/.nuget/packages/": {}
+    "/home/vilius/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/viliusi/OneDrive/Gymnasium/2g/Programming/C＃/GitHub/HirasawaDealsCars/HirasawaDealsCars.csproj",
+      "projectUniqueName": "/home/vilius/OneDrive Hansenberg/Gymnasium/2g/Programming/C#/GitHub/HirasawaDealsCars/HirasawaDealsCars.csproj",
       "projectName": "HirasawaDealsCars",
-      "projectPath": "/home/viliusi/OneDrive/Gymnasium/2g/Programming/C＃/GitHub/HirasawaDealsCars/HirasawaDealsCars.csproj",
-      "packagesPath": "/home/viliusi/.nuget/packages/",
-      "outputPath": "/home/viliusi/OneDrive/Gymnasium/2g/Programming/C＃/GitHub/HirasawaDealsCars/obj/",
+      "projectPath": "/home/vilius/OneDrive Hansenberg/Gymnasium/2g/Programming/C#/GitHub/HirasawaDealsCars/HirasawaDealsCars.csproj",
+      "packagesPath": "/home/vilius/.nuget/packages/",
+      "outputPath": "/home/vilius/OneDrive Hansenberg/Gymnasium/2g/Programming/C#/GitHub/HirasawaDealsCars/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/viliusi/.nuget/NuGet/NuGet.Config"
+        "/home/vilius/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -53,18 +53,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.9, 6.0.9]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.109/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/dotnet6-6.0.110/sdk/6.0.110/RuntimeIdentifierGraph.json"
       }
     }
   }
