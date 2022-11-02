@@ -1,3 +1,1 @@
-﻿Car car = new Car();
-
-car.printModel();
+﻿new CarDealer();

@@ -1,49 +1,33 @@
+/* public class Car 
+{
+  public string model;
+  public string color;
+  public int year;
+
+   public Car(string cModel, string cColor, int cYear)
+   {
+      cModel = "Model";
+      cColor = "Color";
+      cYear = 2000;
+   }
+} */
+
 public class Car 
 {
   string model;
-  string color;
-  int year;
+  string color = "red";
+  int year = 2005;
 
-
-public class beepBeep
-{
-   private string model;
-   private string color;
-   private int year;
-
-   public beepBeep(string carModel, string carColor, int carYear)
-   {
-      carModel = "Kaku P-Model";
-      carColor = "silver";
-      carYear = 2004;
+   public Car(string a, string b, int c){
+    model = a;
+    color = b;
+    year = c;
    }
 
-   // Remaining implementation of Person class.
-}
- /*
-    Car Prius = new Car();
-    Prius.model = "Toyota Prius";
-    Prius.color = "black";
-    Prius.year = 2018;
-
-    Car Kaku = new Car();
-    Kaku.model = "Kaku P-Model";
-    Kaku.color = "silver";
-    Kaku.year = 2004;
-
-    Car Aygo = new Car();
-    Aygo.model = "Toyota AYGO";
-    Aygo.color = "gray";
-    Aygo.year = 2014;
-
-    Car Porsche = new Car();
-    Porsche.model = "Porsche 911 GT3RS";
-    Porsche.color = "tahoe blue metallic";
-    Porsche.year = 2022;
-*/
-    public void printModel(){
-        Console.WriteLine(model);
-
-    }
-  
+  public void PrintCar()
+  {
+    Console.WriteLine(model);
+    Console.WriteLine(color);
+    Console.WriteLine(year);
+  }
 }
