@@ -36,3 +36,18 @@ C:/Users/caspe/Desktop/Program/HirasawaDealsCars/obj/Debug/net6.0/ref/HirasawaDe
 /home/vilius/OneDrive Hansenberg/Gymnasium/2g/Programming/C#/GitHub/HirasawaDealsCars/bin/Debug/net6.0/ref/HirasawaDealsCars.dll
 /home/vilius/OneDrive Hansenberg/Gymnasium/2g/Programming/C#/GitHub/HirasawaDealsCars/bin/Debug/net6.0/HirasawaDealsCars.pdb
 /home/vilius/OneDrive Hansenberg/Gymnasium/2g/Programming/C#/GitHub/HirasawaDealsCars/obj/Debug/net6.0/HirasawaDealsCars.genruntimeconfig.cache
+/home/vilius/Desktop/HirasawaDealsCars/bin/Debug/net6.0/HirasawaDealsCars
+/home/vilius/Desktop/HirasawaDealsCars/bin/Debug/net6.0/HirasawaDealsCars.deps.json
+/home/vilius/Desktop/HirasawaDealsCars/bin/Debug/net6.0/HirasawaDealsCars.runtimeconfig.json
+/home/vilius/Desktop/HirasawaDealsCars/bin/Debug/net6.0/HirasawaDealsCars.dll
+/home/vilius/Desktop/HirasawaDealsCars/bin/Debug/net6.0/ref/HirasawaDealsCars.dll
+/home/vilius/Desktop/HirasawaDealsCars/bin/Debug/net6.0/HirasawaDealsCars.pdb
+/home/vilius/Desktop/HirasawaDealsCars/obj/Debug/net6.0/HirasawaDealsCars.csproj.AssemblyReference.cache
+/home/vilius/Desktop/HirasawaDealsCars/obj/Debug/net6.0/HirasawaDealsCars.GeneratedMSBuildEditorConfig.editorconfig
+/home/vilius/Desktop/HirasawaDealsCars/obj/Debug/net6.0/HirasawaDealsCars.AssemblyInfoInputs.cache
+/home/vilius/Desktop/HirasawaDealsCars/obj/Debug/net6.0/HirasawaDealsCars.AssemblyInfo.cs
+/home/vilius/Desktop/HirasawaDealsCars/obj/Debug/net6.0/HirasawaDealsCars.csproj.CoreCompileInputs.cache
+/home/vilius/Desktop/HirasawaDealsCars/obj/Debug/net6.0/HirasawaDealsCars.dll
+/home/vilius/Desktop/HirasawaDealsCars/obj/Debug/net6.0/ref/HirasawaDealsCars.dll
+/home/vilius/Desktop/HirasawaDealsCars/obj/Debug/net6.0/HirasawaDealsCars.pdb
+/home/vilius/Desktop/HirasawaDealsCars/obj/Debug/net6.0/HirasawaDealsCars.genruntimeconfig.cache

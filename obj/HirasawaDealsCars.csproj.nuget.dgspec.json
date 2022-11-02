@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/vilius/OneDrive Hansenberg/Gymnasium/2g/Programming/C#/GitHub/HirasawaDealsCars/HirasawaDealsCars.csproj": {}
+    "/home/vilius/Desktop/HirasawaDealsCars/HirasawaDealsCars.csproj": {}
   },
   "projects": {
-    "/home/vilius/OneDrive Hansenberg/Gymnasium/2g/Programming/C#/GitHub/HirasawaDealsCars/HirasawaDealsCars.csproj": {
+    "/home/vilius/Desktop/HirasawaDealsCars/HirasawaDealsCars.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/vilius/OneDrive Hansenberg/Gymnasium/2g/Programming/C#/GitHub/HirasawaDealsCars/HirasawaDealsCars.csproj",
+        "projectUniqueName": "/home/vilius/Desktop/HirasawaDealsCars/HirasawaDealsCars.csproj",
         "projectName": "HirasawaDealsCars",
-        "projectPath": "/home/vilius/OneDrive Hansenberg/Gymnasium/2g/Programming/C#/GitHub/HirasawaDealsCars/HirasawaDealsCars.csproj",
+        "projectPath": "/home/vilius/Desktop/HirasawaDealsCars/HirasawaDealsCars.csproj",
         "packagesPath": "/home/vilius/.nuget/packages/",
-        "outputPath": "/home/vilius/OneDrive Hansenberg/Gymnasium/2g/Programming/C#/GitHub/HirasawaDealsCars/obj/",
+        "outputPath": "/home/vilius/Desktop/HirasawaDealsCars/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/vilius/.nuget/NuGet/NuGet.Config"
