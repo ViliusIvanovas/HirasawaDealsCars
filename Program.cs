@@ -1,4 +1,6 @@
-﻿new CarDealer();
+﻿using System;
+
+//new CarDealer();
 
 Console.WriteLine(@"Punpun moment:
  /*   .%   &@(#@&&%@@@##&@%#%@@@&%&&#&@&#%%/(/(/(/*/*/,/*.*, .,,.,,.,....... ,.,
@@ -51,3 +53,4 @@ Console.WriteLine(@"Punpun moment:
                                                                                 
                                                                                 
                                                                                 ");
+
