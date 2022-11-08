@@ -20,17 +20,18 @@ This way, we won't have to repeat ourselves whenever we want to write a message.
 By using messages.Add, we can define the messages we want to send. Once we're done, 
 we simply call the Message function to write the messages.*/
 void Message()
-class Caller
-{
 Console.Clear();
-foreach(string Item in messages){
     Console.WriteLine(Item);
     Thread.Sleep(delayTime);
+
+class Caller
+{
     public static void Main(string[] args)
     {
         //AllMethods.PrintCarsList();
     }
 }
+
 Console.WriteLine("------------------------------\n");
 messages.Clear();
 }
