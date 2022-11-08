@@ -110,6 +110,14 @@ switch (inputKey)
         messages.Add("What in particular would you like to know about?");
         break;
         }
+
+        case ConsoleKey.D2:
+        {
+        messages.Add("The Kaku P-Model\u2014an excellent choice, I must say! She was made in Malaysia, and that mighty engine of hers is above the competition!");
+        messages.Add("What in particular would you like to know about?");
+        break;
+        }
+
         default:
         break;
     }
