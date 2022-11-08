@@ -68,20 +68,21 @@ messages.Add("Now, you need only walk in the door... (Press a key)");
 Message();
 Console.ReadKey();
 
-#region  1984 Cars
+#region Chevron Cars
 Console.Clear();
-Console.Title = "1984 Cars";
+Console.Title = "Chevron Cars";
 
-messages.Add("Welcome to 1984 Cars!");
-messages.Add("My name's Mr. Johnson, and I'm here to help you pick the best car for your needs!");
+messages.Add("Welcome to Chevron Cars!");
+messages.Add("My name's John Chevron, and I *love* cars! I'm here to help you pick the best car for your needs!");
 messages.Add("And what might your name be?");
 Message();
 
-string userName = Console.ReadLine(); 
+string? userName = Console.ReadLine();
 
 messages.Add("Nice to meet you, " + userName + "!");
 messages.Add("We've got some of the finest cars on show in our model room! Would you like to see it?\n(Press W to accept, or D to decline)");
 Message();
+
 #endregion
 
 //Choice: model room
@@ -94,10 +95,29 @@ switch (inputKey)
     Console.Clear();
     Console.Title = "In a Model Room";
 
-    messages.Add("And here we are, the model room!");
+    messages.Add("And here we are, " + userName + ", the model room!");
     messages.Add("As you can see, we've got cars of all kinds. Which one would you like to hear more about?");
     //List of cars
+    //Temporary: prototype stuff
+    messages.Add("1: Kaku P-Model 2004");
+    messages.Add("2: Toyota Prius 2017");
+    messages.Add("3: Toyota Aygo 2014");
+    messages.Add("4: Porsche 911 GT3RS 2011");
     Message();
+
+    ConsoleKey inputKey2 = Console.ReadKey().Key;
+    switch (inputKey2)
+    {
+        case ConsoleKey.D1:
+        {
+        messages.Add("The Kaku P-Model\u2014an excellent choice, I must say! She was made in Malaysia, and that mighty engine of hers is above the competition!");
+        messages.Add("What in particular would you like to know about?");
+        break;
+        }
+        default:
+        break;
+    }
+    Console.ReadLine();
     }
     break;
     #endregion
