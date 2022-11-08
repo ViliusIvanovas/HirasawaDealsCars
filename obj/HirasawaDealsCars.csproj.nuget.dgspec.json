@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/vilius/Desktop/HirasawaDealsCars/HirasawaDealsCars.csproj": {}
+    "C:\\Users\\caspe\\Desktop\\Program\\HirasawaDealsCars merge\\HirasawaDealsCars\\HirasawaDealsCars.csproj": {}
   },
   "projects": {
-    "/home/vilius/Desktop/HirasawaDealsCars/HirasawaDealsCars.csproj": {
+    "C:\\Users\\caspe\\Desktop\\Program\\HirasawaDealsCars merge\\HirasawaDealsCars\\HirasawaDealsCars.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/vilius/Desktop/HirasawaDealsCars/HirasawaDealsCars.csproj",
+        "projectUniqueName": "C:\\Users\\caspe\\Desktop\\Program\\HirasawaDealsCars merge\\HirasawaDealsCars\\HirasawaDealsCars.csproj",
         "projectName": "HirasawaDealsCars",
-        "projectPath": "/home/vilius/Desktop/HirasawaDealsCars/HirasawaDealsCars.csproj",
-        "packagesPath": "/home/vilius/.nuget/packages/",
-        "outputPath": "/home/vilius/Desktop/HirasawaDealsCars/obj/",
+        "projectPath": "C:\\Users\\caspe\\Desktop\\Program\\HirasawaDealsCars merge\\HirasawaDealsCars\\HirasawaDealsCars.csproj",
+        "packagesPath": "C:\\Users\\caspe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\caspe\\Desktop\\Program\\HirasawaDealsCars merge\\HirasawaDealsCars\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/vilius/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\caspe\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -43,7 +43,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -52,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/dotnet6-6.0.110/sdk/6.0.110/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

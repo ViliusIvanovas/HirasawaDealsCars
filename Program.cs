@@ -1,28 +1,6 @@
-﻿using System;
-
+﻿/*This part is causing problems
+#region Classes
 new CarDealer();
-
-List<Car> cars = new List<Car>();
-cars.Add(new Car("Mercedes"));
-
-*/
-#endregion
-
-
-#region Methods
-
-List<string> messages = new List<string>();
-int delayTime = 0;
-
-/*This method is used throughout the code for writing things in the console. 
-This way, we won't have to repeat ourselves whenever we want to write a message.
-
-By using messages.Add, we can define the messages we want to send. Once we're done, 
-we simply call the Message function to write the messages.*/
-void Message()
-Console.Clear();
-    Console.WriteLine(Item);
-    Thread.Sleep(delayTime);
 
 class Caller
 {
@@ -31,11 +9,27 @@ class Caller
         //AllMethods.PrintCarsList();
     }
 }
+#endregion
+*/
 
+
+#region Methods
+List<string> messages = new List<string>();
+int delayTime = 0;
+/*This method is used throughout the code for writing things in the console. 
+This way, we won't have to repeat ourselves whenever we want to write a message.
+By using messages.Add, we can define the messages we want to send. Once we're done, 
+we simply call the Message function to write the messages.*/
+void Message()
+{
+Console.Clear();
+foreach(string Item in messages){
+    Console.WriteLine(Item);
+    Thread.Sleep(delayTime);
+}
 Console.WriteLine("------------------------------\n");
 messages.Clear();
 }
-
 #endregion
 
 
