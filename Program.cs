@@ -1,3 +1,12 @@
-﻿//States the facts as writeline command
-Console.WriteLine("Hirasawa, our leader!");
+﻿using System;
+
+new CarDealer();
+
+class Caller
+{
+    public static void Main(string[] args)
+    {
+        //AllMethods.PrintCarsList();
+    }
+}
 

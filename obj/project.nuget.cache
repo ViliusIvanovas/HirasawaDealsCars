@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XYW4rDSXdqDxRS/eAccNxeGkCo+L62QSYuhCTW5jlS5YVkb/B7PrjuupSUqxHjCa+r3MIWCXGHRgtWXr2UvuTQ==",
+  "dgSpecHash": "GIFTRgm97XI0vQZfG3utG2DpWvaTkatAweWXqP+1CO6eivSRtAsEBheQ8NuggE9bDD4jt9FsBGS1gKefRVa7LA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\caspe\\Desktop\\Program\\HirasawaDealsCars\\HirasawaDealsCars.csproj",
+  "projectFilePath": "/home/vilius/Desktop/HirasawaDealsCars/HirasawaDealsCars.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
