@@ -1,14 +1,15 @@
 public class Car
 {
     string model;
-    string color = "red";
-    int year = 2005;
+    string color;
+    int year;
 
-    public Car(string a, string b, int c)
+    public void CarMaker(string model, string color, int year, bool locked)
     {
-        model = a;
-        color = b;
-        year = c;
+        string carModel = model;
+        string carColor = color;
+        int carYear = year;
+        bool carLocked = locked;
     }
 
     public void PrintCar()
