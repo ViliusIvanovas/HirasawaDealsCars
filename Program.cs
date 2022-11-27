@@ -12,11 +12,16 @@ class Caller
 #endregion
 */
 
+// My code for making the constructor thing work, finally
+//    name              model    color  year  locked doors
+Car ferrari = new Car("Ferrari", "Red", 2001, false, 3);
 
-
-
-Car.CarMaker();
-https://stackoverflow.com/questions/14987156/one-key-to-multiple-values-dictionary-in-c
+// The way to call it's to use the name dot the variable you want to get back
+Console.WriteLine(ferrari.model);
+Console.WriteLine(ferrari.color);
+Console.WriteLine(ferrari.year);
+Console.WriteLine(ferrari.locked);
+Console.WriteLine(ferrari.doors);
 
 Console.ReadKey();
 

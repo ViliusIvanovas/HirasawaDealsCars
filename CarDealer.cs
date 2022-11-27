@@ -1,4 +1,4 @@
-public class CarDealer
+/*public class CarDealer
 {
     #region Fields
     List<Car> AvailableCars;
@@ -10,7 +10,7 @@ public class CarDealer
     {
         AvailableCars = new List<Car>();
 
-        AvailableCars.Add(new Car("Kaku P-Model", "Silver", 2004));
+        AvailableCars.Add(new CarMaker("Kaku P-Model", "Silver", 2004));
         AvailableCars.Add(new Car("Toyota Prius", "Black", 2017));
         AvailableCars.Add(new Car("Toyota AYGO", "Gray", 2014));
         AvailableCars.Add(new Car("Porsche 911 GT3RS", "Blue", 2021));
@@ -35,4 +35,4 @@ public class CarDealer
         AvailableCars.ForEach(i => Console.Write("{0}\n", i));
     }
     #endregion
-}
+}*/
