@@ -1,15 +1,74 @@
-﻿#region Initialization
-//    name             brand         model    color year locked doors  price
-Car porsche = new Car("Porsche", "911 GT3RS", "Blue", 2021, true, 10000000);
+﻿#region Initialization and or testing
+
+Player test = new Player("name", 1000000000);
+
+//    name             brand         model    color   year locked  price
+Car porsche = new Car("Porsche", "911 GT3RS", "Blue", 2021, true, 1000000);
 Car prius = new Car("Toyota", "Prius", "Black", 2017, false, 120000);
 Car aygo = new Car("Toyota", "AYGO", "Silver", 2014, false, 80000);
 Car kaku = new Car("Kaku", "P-Model", "Metal", 2004, true, 2000000);
 
-// Car array thing
-string[] carArray = {"1. " + kaku.year + " " + kaku.brand + " " + kaku.model, 
-"2. " + prius.year + " " + prius.brand + " " + prius.model, 
-"3. " + aygo.year + " " + aygo.brand + " " + aygo.model, 
-"4. " + porsche.year + " " + porsche.brand + " " + porsche.model,};
+List<string> carsAvailable;
+
+carsAvailable.Add("Porsche");
+
+bool ongoingPurchase = true;
+
+while (ongoingPurchase = true)
+{
+    Console.WriteLine("Buy shit");
+
+    carsAvailable.ForEach(i=> Console.Write("{0}\n", i));
+
+    string inp = Console.ReadLine();
+
+    switch (inp)
+    {
+        case "1":
+        bool success1 = Transactions.buyCar(kaku, test);
+        if (success1 = true)
+        {
+            ongoingPurchase = false;
+            test.ownedCars.Add(kaku);
+
+        }
+        break;
+        case "2":
+        bool success2 = Transactions.buyCar(prius, test);
+        if (success2 = true)
+        {
+            ongoingPurchase = false;
+            test.ownedCars.Add(kaku);
+           
+        }
+        break;
+        case "3":
+        bool success3 = Transactions.buyCar(aygo, test);
+        if (success3 = true)
+        {
+            ongoingPurchase = false;
+            test.ownedCars.Add(kaku);
+           
+        }
+        break;
+        case "4":
+        bool success4 = Transactions.buyCar(porsche, test);
+        if (success4 = true)
+        {
+            ongoingPurchase = false;
+            test.ownedCars.Add(kaku);
+         
+        }
+        break;
+        default:
+        Console.WriteLine("error");
+        break;
+    }
+
+    Console.Clear();
+}
+
+Console.WriteLine(test.balance);
 
 // True = Closed
 //location  method    name  lock state
@@ -19,6 +78,8 @@ CarDealer.unlockCar(porsche, true);
 // True = open
 //          method   name   door name  state   car
 CarDealer.openDoor(porsche.DriverDoor, true, porsche);
+
+Console.ReadKey();
 
 #endregion
 
@@ -39,10 +100,11 @@ foreach(string Item in messages){
 Console.WriteLine("------------------------------\n");
 messages.Clear();
 }
+
 #endregion
 
-
 #region Story
+
 messages.Add("First off, select a game mode. This will determine the speed of the text.\na - Immersion: 1.5 seconds delay\nb - Speed: no delay");
 Message();
 
@@ -84,6 +146,9 @@ Message();
 
 string? userName = Console.ReadLine();
 
+//                         name  riches
+Player User = new Player(userName, 1);
+
 messages.Add("Nice to meet you, " + userName + "!");
 messages.Add("We've got some of the finest cars on show in our model room! Would you like to see it?\n(Press W to accept, or D to decline)");
 Message();
@@ -95,6 +160,7 @@ ConsoleKey inputKey = Console.ReadKey().Key;
 switch (inputKey)
 {
     #region model room
+
     case ConsoleKey.W:
     {
     Console.Clear();
@@ -104,10 +170,10 @@ switch (inputKey)
     messages.Add("As you can see, we've got cars of all kinds. Which one would you like to hear more about?");
     //List of cars
     //Temporary: prototype stuff
-    messages.Add(carArray[0]);
-    messages.Add(carArray[1]);
-    messages.Add(carArray[2]);
-    messages.Add(carArray[3]);
+    messages.Add(carsAvailable[0]);
+    messages.Add(carsAvailable[1]);
+    messages.Add(carsAvailable[2]);
+    messages.Add(carsAvailable[3]);
     Message();
 
     ConsoleKey inputKey2 = Console.ReadKey().Key;
