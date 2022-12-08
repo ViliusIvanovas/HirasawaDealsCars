@@ -2,8 +2,8 @@
 //    name             brand         model    color year locked doors  price
 Car porsche = new Car("Porsche", "911 GT3RS", "Blue", 2021, true, 10000000);
 Car prius = new Car("Toyota", "Prius", "Black", 2017, false, 120000);
-Car aygo = new Car("Toyota", "AYGO", "Gray", 2014, false, 80000);
-Car kaku = new Car("Kaku", "P-Model", "Silver", 2004, true, 2000000);
+Car aygo = new Car("Toyota", "AYGO", "Silver", 2014, false, 80000);
+Car kaku = new Car("Kaku", "P-Model", "Metal", 2004, true, 2000000);
 
 // Car array thing
 string[] carArray = {"1. " + kaku.year + " " + kaku.brand + " " + kaku.model, 
