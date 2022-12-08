@@ -81,3 +81,18 @@ C:\Users\ivano\Documents\CSharp projects\HirasawaDealsCars\bin\Debug\net6.0\Hira
 C:\Users\ivano\Documents\CSharp projects\HirasawaDealsCars\bin\Debug\net6.0\HirasawaDealsCars.pdb
 C:\Users\ivano\Documents\CSharp projects\HirasawaDealsCars\obj\Debug\net6.0\HirasawaDealsCars.genruntimeconfig.cache
 C:\Users\ivano\Documents\CSharp projects\HirasawaDealsCars\obj\Debug\net6.0\ref\HirasawaDealsCars.dll
+C:\Users\Vilius\Documents\Projects\HirasawaDealsCars\bin\Debug\net6.0\HirasawaDealsCars.exe
+C:\Users\Vilius\Documents\Projects\HirasawaDealsCars\bin\Debug\net6.0\HirasawaDealsCars.deps.json
+C:\Users\Vilius\Documents\Projects\HirasawaDealsCars\bin\Debug\net6.0\HirasawaDealsCars.runtimeconfig.json
+C:\Users\Vilius\Documents\Projects\HirasawaDealsCars\bin\Debug\net6.0\HirasawaDealsCars.dll
+C:\Users\Vilius\Documents\Projects\HirasawaDealsCars\bin\Debug\net6.0\HirasawaDealsCars.pdb
+C:\Users\Vilius\Documents\Projects\HirasawaDealsCars\obj\Debug\net6.0\HirasawaDealsCars.csproj.AssemblyReference.cache
+C:\Users\Vilius\Documents\Projects\HirasawaDealsCars\obj\Debug\net6.0\HirasawaDealsCars.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vilius\Documents\Projects\HirasawaDealsCars\obj\Debug\net6.0\HirasawaDealsCars.AssemblyInfoInputs.cache
+C:\Users\Vilius\Documents\Projects\HirasawaDealsCars\obj\Debug\net6.0\HirasawaDealsCars.AssemblyInfo.cs
+C:\Users\Vilius\Documents\Projects\HirasawaDealsCars\obj\Debug\net6.0\HirasawaDealsCars.csproj.CoreCompileInputs.cache
+C:\Users\Vilius\Documents\Projects\HirasawaDealsCars\obj\Debug\net6.0\HirasawaDealsCars.dll
+C:\Users\Vilius\Documents\Projects\HirasawaDealsCars\obj\Debug\net6.0\refint\HirasawaDealsCars.dll
+C:\Users\Vilius\Documents\Projects\HirasawaDealsCars\obj\Debug\net6.0\HirasawaDealsCars.pdb
+C:\Users\Vilius\Documents\Projects\HirasawaDealsCars\obj\Debug\net6.0\HirasawaDealsCars.genruntimeconfig.cache
+C:\Users\Vilius\Documents\Projects\HirasawaDealsCars\obj\Debug\net6.0\ref\HirasawaDealsCars.dll

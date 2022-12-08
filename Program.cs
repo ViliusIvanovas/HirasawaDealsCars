@@ -1,29 +1,26 @@
-﻿/*This part is causing problems
-#region Classes
-new CarDealer();
+﻿#region Initialization
+//    name             brand         model    color year locked doors  price
+Car porsche = new Car("Porsche", "911 GT3RS", "Blue", 2021, true, 10000000);
+Car prius = new Car("Toyota", "Prius", "Black", 2017, false, 120000);
+Car aygo = new Car("Toyota", "AYGO", "Gray", 2014, false, 80000);
+Car kaku = new Car("Kaku", "P-Model", "Silver", 2004, true, 2000000);
 
-class Caller
-{
-    public static void Main(string[] args)
-    {
-        //AllMethods.PrintCarsList();
-    }
-}
+// Car array thing
+string[] carArray = {"1. " + kaku.year + " " + kaku.brand + " " + kaku.model, 
+"2. " + prius.year + " " + prius.brand + " " + prius.model, 
+"3. " + aygo.year + " " + aygo.brand + " " + aygo.model, 
+"4. " + porsche.year + " " + porsche.brand + " " + porsche.model,};
+
+// True = Closed
+//location  method    name  lock state
+CarDealer.unlockCar(porsche, true);
+
+// OMG jeg går snart død ahhahah men ja, det han kan åbne og lukke døre
+// True = open
+//          method   name   door name  state   car
+CarDealer.openDoor(porsche.DriverDoor, true, porsche);
+
 #endregion
-*/
-
-// My code for making the constructor thing work, finally
-//    name              model    color  year  locked doors
-Car ferrari = new Car("Ferrari", "Red", 2001, false, 3);
-
-// The way to call it's to use the name dot the variable you want to get back
-Console.WriteLine(ferrari.model);
-Console.WriteLine(ferrari.color);
-Console.WriteLine(ferrari.year);
-Console.WriteLine(ferrari.locked);
-Console.WriteLine(ferrari.doors);
-
-Console.ReadKey();
 
 #region Methods
 List<string> messages = new List<string>();
@@ -107,10 +104,10 @@ switch (inputKey)
     messages.Add("As you can see, we've got cars of all kinds. Which one would you like to hear more about?");
     //List of cars
     //Temporary: prototype stuff
-    messages.Add("1: Kaku P-Model 2004");
-    messages.Add("2: Toyota Prius 2017");
-    messages.Add("3: Toyota Aygo 2014");
-    messages.Add("4: Porsche 911 GT3RS 2011");
+    messages.Add(carArray[0]);
+    messages.Add(carArray[1]);
+    messages.Add(carArray[2]);
+    messages.Add(carArray[3]);
     Message();
 
     ConsoleKey inputKey2 = Console.ReadKey().Key;
