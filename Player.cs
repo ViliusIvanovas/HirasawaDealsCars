@@ -12,5 +12,18 @@ public class Player
         name = givenName;
         balance = givenBalance;
     }
-    
+    public static void makeCarList(Player player)
+    {
+        player.carsAvailable.Add("2021 Porsche 911 GT3RS");
+        player.carsAvailable.Add("2017 Toyota Prius");
+        player.carsAvailable.Add("2014 Toyota AYGO");
+        player.carsAvailable.Add("2004 Kaku P-Model");
+    }
+    public void RemoveCar(Car car, Player user)
+    {
+        string toRemove = car.year + " " + car.brand + " " + car.model;
+
+        user.carsAvailable.Remove(toRemove);
+    }
+
 }

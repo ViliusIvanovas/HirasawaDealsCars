@@ -63,7 +63,7 @@ Message();
 string? userName = Console.ReadLine();
 
 //                         name  riches
-Player User = new Player(userName, 1);
+Player User = new Player(userName, 5000000);
 
 //    name             brand         model    color   year locked  price
 Car porsche = new Car("Porsche", "911 GT3RS", "Blue", 2021, true, 1000000);
@@ -71,10 +71,14 @@ Car prius = new Car("Toyota", "Prius", "Black", 2017, false, 120000);
 Car aygo = new Car("Toyota", "AYGO", "Silver", 2014, false, 80000);
 Car kaku = new Car("Kaku", "P-Model", "Metal", 2004, true, 2000000);
 
-User.carsAvailable.Add("2021 Porsche 911 GT3RS");
-User.carsAvailable.Add("2017 Toyota Prius");
-User.carsAvailable.Add("2014 Toyota AYGO");
-User.carsAvailable.Add("2004 Kaku P-Model");
+Player.makeCarList(User);
+
+foreach (string i in User.carsAvailable)
+{
+    Console.WriteLine(i);
+}
+
+Console.ReadKey();
 
 messages.Add("Nice to meet you, " + userName + "!");
 messages.Add("We've got some of the finest cars on show in our model room! Would you like to see it?\n(Press W to accept, or D to decline)");
