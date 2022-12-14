@@ -71,7 +71,14 @@ Car prius = new Car("Toyota", "Prius", "Black", 2017, false, 120000);
 Car aygo = new Car("Toyota", "AYGO", "Silver", 2014, false, 80000);
 Car kaku = new Car("Kaku", "P-Model", "Metal", 2004, true, 2000000);
 
-Player.makeCarList(User);
+# region Testing Zone
+
+foreach (string i in User.carsAvailable)
+{
+    Console.WriteLine(i);
+}
+
+Player.RemoveCar(kaku, User);
 
 foreach (string i in User.carsAvailable)
 {
@@ -79,6 +86,8 @@ foreach (string i in User.carsAvailable)
 }
 
 Console.ReadKey();
+
+# endregion
 
 messages.Add("Nice to meet you, " + userName + "!");
 messages.Add("We've got some of the finest cars on show in our model room! Would you like to see it?\n(Press W to accept, or D to decline)");
