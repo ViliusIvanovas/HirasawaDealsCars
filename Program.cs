@@ -1,18 +1,4 @@
-﻿/*This part is causing problems
-#region Classes
-new CarDealer();
-
-class Caller
-{
-    public static void Main(string[] args)
-    {
-        //AllMethods.PrintCarsList();
-    }
-}
-#endregion
-*/
-
-
+﻿
 #region Methods
 List<string> messages = new List<string>();
 int delayTime = 0;
@@ -57,6 +43,7 @@ switch (gameMode)
 }
 
 start:
+
 Console.Title = "Parking Lot";
 messages.Add("Finally, after what feels like two years of pilgrimage, you have arrived.");
 messages.Add("The car shop stands before you: an imposing block of concrete, large display windows tracing its clean walls.");
@@ -79,6 +66,19 @@ messages.Add("Nice to meet you, " + userName + "!");
 messages.Add("We've got some of the finest cars on show in our model room! Would you like to see it?\n(Press W to accept, or D to decline)");
 Message();
 
+Player User = new Player(userName, 500000000);
+
+//    name             brand         model    color   year locked  price
+Car porsche = new Car("Porsche", "911 GT3RS", "Blue", 2021, true, 1000000);
+Car prius = new Car("Toyota", "Prius", "Black", 2017, false, 120000);
+Car aygo = new Car("Toyota", "AYGO", "Silver", 2014, false, 80000);
+Car kaku = new Car("Kaku", "P-Model", "Metal", 2004, true, 2000000);
+
+User.carsAvailable.Add("2021 Porsche 911 GT3RS");
+User.carsAvailable.Add("2017 Toyota Prius");
+User.carsAvailable.Add("2014 Toyota AYGO");
+User.carsAvailable.Add("2004 Kaku P-Model");
+
 #endregion
 
 //Choice: model room
@@ -95,10 +95,10 @@ switch (inputKey)
     messages.Add("As you can see, we've got cars of all kinds. Which one would you like to hear more about?");
     //List of cars
     //Temporary: prototype stuff
-    messages.Add("1: Kaku P-Model 2004");
-    messages.Add("2: Toyota Prius 2017");
-    messages.Add("3: Toyota Aygo 2014");
-    messages.Add("4: Porsche 911 GT3RS 2011");
+    messages.Add(User.carsAvailable[0]);
+    messages.Add(User.carsAvailable[1]);
+    messages.Add(User.carsAvailable[2]);
+    messages.Add(User.carsAvailable[3]);
     Message();
 
     ConsoleKey inputKey2 = Console.ReadKey().Key;
@@ -130,7 +130,7 @@ switch (inputKey)
     case ConsoleKey.D:
     {
     messages.Add("I do not understand. You went all the way in here, just to reject my benevolent offer?!");
-    messages.Add("For this, you'll pay.");
+    messages.Add("You're tearing me apart, " + userName + "!");
     messages.Add("(His hand moves to his left pocket, and he pulls out his MIBURI laser gun.)");
     messages.Add("A \"pew\" is the last thing you hear before falling to the ground...");
     Message();
