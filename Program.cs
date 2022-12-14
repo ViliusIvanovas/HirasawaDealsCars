@@ -1,89 +1,4 @@
-﻿#region Initialization and or testing
-
-Player test = new Player("name", 1000000000);
-
-//    name             brand         model    color   year locked  price
-Car porsche = new Car("Porsche", "911 GT3RS", "Blue", 2021, true, 1000000);
-Car prius = new Car("Toyota", "Prius", "Black", 2017, false, 120000);
-Car aygo = new Car("Toyota", "AYGO", "Silver", 2014, false, 80000);
-Car kaku = new Car("Kaku", "P-Model", "Metal", 2004, true, 2000000);
-
-List<string> carsAvailable;
-
-carsAvailable.Add("Porsche");
-
-bool ongoingPurchase = true;
-
-while (ongoingPurchase = true)
-{
-    Console.WriteLine("Buy shit");
-
-    carsAvailable.ForEach(i=> Console.Write("{0}\n", i));
-
-    string inp = Console.ReadLine();
-
-    switch (inp)
-    {
-        case "1":
-        bool success1 = Transactions.buyCar(kaku, test);
-        if (success1 = true)
-        {
-            ongoingPurchase = false;
-            test.ownedCars.Add(kaku);
-
-        }
-        break;
-        case "2":
-        bool success2 = Transactions.buyCar(prius, test);
-        if (success2 = true)
-        {
-            ongoingPurchase = false;
-            test.ownedCars.Add(kaku);
-           
-        }
-        break;
-        case "3":
-        bool success3 = Transactions.buyCar(aygo, test);
-        if (success3 = true)
-        {
-            ongoingPurchase = false;
-            test.ownedCars.Add(kaku);
-           
-        }
-        break;
-        case "4":
-        bool success4 = Transactions.buyCar(porsche, test);
-        if (success4 = true)
-        {
-            ongoingPurchase = false;
-            test.ownedCars.Add(kaku);
-         
-        }
-        break;
-        default:
-        Console.WriteLine("error");
-        break;
-    }
-
-    Console.Clear();
-}
-
-Console.WriteLine(test.balance);
-
-// True = Closed
-//location  method    name  lock state
-CarDealer.unlockCar(porsche, true);
-
-// OMG jeg går snart død ahhahah men ja, det han kan åbne og lukke døre
-// True = open
-//          method   name   door name  state   car
-CarDealer.openDoor(porsche.DriverDoor, true, porsche);
-
-Console.ReadKey();
-
-#endregion
-
-#region Methods
+﻿#region Methods
 List<string> messages = new List<string>();
 int delayTime = 0;
 /*This method is used throughout the code for writing things in the console. 
@@ -92,13 +7,14 @@ By using messages.Add, we can define the messages we want to send. Once we're do
 we simply call the Message function to write the messages.*/
 void Message()
 {
-Console.Clear();
-foreach(string Item in messages){
-    Console.WriteLine(Item);
-    Thread.Sleep(delayTime);
-}
-Console.WriteLine("------------------------------\n");
-messages.Clear();
+    Console.Clear();
+    foreach (string Item in messages)
+    {
+        Console.WriteLine(Item);
+        Thread.Sleep(delayTime);
+    }
+    Console.WriteLine("------------------------------\n");
+    messages.Clear();
 }
 
 #endregion
@@ -112,19 +28,19 @@ ConsoleKey gameMode = Console.ReadKey().Key;
 switch (gameMode)
 {
     case ConsoleKey.A:
-    {
-        delayTime = 1500;
-    }
-    break;
+        {
+            delayTime = 1500;
+        }
+        break;
 
     case ConsoleKey.B:
-    {
-        delayTime = 0;
-    }
-    break;
+        {
+            delayTime = 0;
+        }
+        break;
 
     default:
-    break;
+        break;
 }
 
 start:
@@ -149,6 +65,17 @@ string? userName = Console.ReadLine();
 //                         name  riches
 Player User = new Player(userName, 1);
 
+//    name             brand         model    color   year locked  price
+Car porsche = new Car("Porsche", "911 GT3RS", "Blue", 2021, true, 1000000);
+Car prius = new Car("Toyota", "Prius", "Black", 2017, false, 120000);
+Car aygo = new Car("Toyota", "AYGO", "Silver", 2014, false, 80000);
+Car kaku = new Car("Kaku", "P-Model", "Metal", 2004, true, 2000000);
+
+User.carsAvailable.Add("2021 Porsche 911 GT3RS");
+User.carsAvailable.Add("2017 Toyota Prius");
+User.carsAvailable.Add("2014 Toyota AYGO");
+User.carsAvailable.Add("2004 Kaku P-Model");
+
 messages.Add("Nice to meet you, " + userName + "!");
 messages.Add("We've got some of the finest cars on show in our model room! Would you like to see it?\n(Press W to accept, or D to decline)");
 Message();
@@ -162,52 +89,52 @@ switch (inputKey)
     #region model room
 
     case ConsoleKey.W:
-    {
-    Console.Clear();
-    Console.Title = "In a Model Room";
-
-    messages.Add("And here we are, " + userName + ", the model room!");
-    messages.Add("As you can see, we've got cars of all kinds. Which one would you like to hear more about?");
-    //List of cars
-    //Temporary: prototype stuff
-    messages.Add(carsAvailable[0]);
-    messages.Add(carsAvailable[1]);
-    messages.Add(carsAvailable[2]);
-    messages.Add(carsAvailable[3]);
-    Message();
-
-    ConsoleKey inputKey2 = Console.ReadKey().Key;
-    switch (inputKey2)
-    {
-        case ConsoleKey.D1:
         {
-        messages.Add("The Kaku P-Model\u2014an excellent choice, I must say! She was made in Malaysia, and that mighty engine of hers is above the competition!");
-        messages.Add("What in particular would you like to know about?");
-        break;
+            Console.Clear();
+            Console.Title = "In a Model Room";
+
+            messages.Add("And here we are, " + userName + ", the model room!");
+            messages.Add("As you can see, we've got cars of all kinds. Which one would you like to hear more about?");
+            //List of cars
+            //Temporary: prototype stuff
+            messages.Add(User.carsAvailable[0]);
+            messages.Add(User.carsAvailable[1]);
+            messages.Add(User.carsAvailable[2]);
+            messages.Add(User.carsAvailable[3]);
+            Message();
+
+            ConsoleKey inputKey2 = Console.ReadKey().Key;
+            switch (inputKey2)
+            {
+                case ConsoleKey.D1:
+                    {
+                        messages.Add("The Kaku P-Model\u2014an excellent choice, I must say! She was made in Malaysia, and that mighty engine of hers is above the competition!");
+                        messages.Add("What in particular would you like to know about?");
+                        break;
+                    }
+                default:
+                    break;
+            }
+            Console.ReadLine();
         }
-        default:
         break;
-    }
-    Console.ReadLine();
-    }
-    break;
     #endregion
 
     #region rejection
     case ConsoleKey.D:
-    {
-    messages.Add("I do not understand. You went all the way in here, just to reject my benevolent offer?!");
-    messages.Add("For this, you'll pay.");
-    messages.Add("(His hand moves to his left pocket, and he pulls out his MIBURI laser gun.)");
-    messages.Add("A \"pew\" is the last thing you hear before falling to the ground...");
-    Message();
-    Console.ReadKey();
-    }
-    break;
+        {
+            messages.Add("I do not understand. You went all the way in here, just to reject my benevolent offer?!");
+            messages.Add("For this, you'll pay.");
+            messages.Add("(His hand moves to his left pocket, and he pulls out his MIBURI laser gun.)");
+            messages.Add("A \"pew\" is the last thing you hear before falling to the ground...");
+            Message();
+            Console.ReadKey();
+        }
+        break;
     #endregion
 
     default:
-    break;
+        break;
 }
 
 //Start new game

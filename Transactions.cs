@@ -16,6 +16,8 @@ public class Transactions
             Console.WriteLine(car.price + " Deducted from your balance");
             Console.WriteLine(payer.balance + " Is all you have left");
 
+            payer.ownedCars.Add(car);
+
             success = true;
         }
         else
@@ -26,11 +28,6 @@ public class Transactions
 
         return success;
     }
-    public static void financeCar()
-    {
-
-    }
-
 
     #endregion
 }
