@@ -108,14 +108,6 @@ CarDealer.messages.Add("Nice to meet you, " + userName + "!");
 CarDealer.messages.Add("We've got some of the finest cars on show in our model room! Would you like to see it?\n(Press W to accept, or D to decline)");
 Message();
 
-Player User = new Player(userName, 500000000);
-
-//    name             brand         model    color   year locked  price
-Car porsche = new Car("Porsche", "911 GT3RS", "Blue", 2021, true, 1000000);
-Car prius = new Car("Toyota", "Prius", "Black", 2017, false, 120000);
-Car aygo = new Car("Toyota", "AYGO", "Silver", 2014, false, 80000);
-Car kaku = new Car("Kaku", "P-Model", "Metal", 2004, true, 2000000);
-
 #endregion
 
 //Choice: model room
@@ -157,14 +149,14 @@ switch (inputKey)
     {
         case ConsoleKey.D1:
         {
-        messages.Add("The Kaku P-Model\u2014an excellent choice, I must say! She was made in Malaysia, and that mighty engine of hers is above the competition!");
-        messages.Add("1.Brand");
-        messages.Add("What in particular would you like to know about?");
-        messages.Add("2. Model");
-        messages.Add("3. Color");
-        messages.Add("4. Year");
-        messages.Add("5. Unlock car");
-        messages.Add("6. Buy (" + kaku.price +")" );    
+        CarDealer.messages.Add("The Kaku P-Model\u2014an excellent choice, I must say! She was made in Malaysia, and that mighty engine of hers is above the competition!");
+        CarDealer.messages.Add("1.Brand");
+        CarDealer.messages.Add("What in particular would you like to know about?");
+        CarDealer.messages.Add("2. Model");
+        CarDealer.messages.Add("3. Color");
+        CarDealer.messages.Add("4. Year");
+        CarDealer.messages.Add("5. Unlock car");
+        CarDealer.messages.Add("6. Buy (" + kaku.price +")" );    
         Message();
 
 //1: This car belongs to the brand [brand].
@@ -199,18 +191,18 @@ switch (inputKey)
         }
         break;
     {
-    messages.Add("I do not understand. You went all the way in here, just to reject my benevolent offer?!");
-    messages.Add("You're tearing me apart, " + userName + "!");
-    messages.Add("(His hand moves to his left pocket, and he pulls out his MIBURI laser gun.)");
-    messages.Add("A \"pew\" is the last thing you hear before falling to the ground...");
+    CarDealer.messages.Add("I do not understand. You went all the way in here, just to reject my benevolent offer?!");
+    CarDealer.messages.Add("You're tearing me apart, " + userName + "!");
+    CarDealer.messages.Add("(His hand moves to his left pocket, and he pulls out his MIBURI laser gun.)");
+    CarDealer.messages.Add("A \"pew\" is the last thing you hear before falling to the ground...");
     Message();
     Console.ReadKey();
     Thread.Sleep(5000);
     Console.Title = "£}031s";
-    messages.Add("You wake up in a strange world... \n \n");
+    CarDealer.messages.Add("You wake up in a strange world... \n \n");
     Console.ForegroundColor = ConsoleColor.DarkRed;
-    messages.Add("- People are very strange these days. I used to know a girl, she had a dozen guys. One of them found out about it, beat her so bad that she ended up in a hospital on Guerrero Street.");
-    messages.Add("- Hahaha, what a story, Mark!");
+    CarDealer.messages.Add("- People are very strange these days. I used to know a girl, she had a dozen guys. One of them found out about it, beat her so bad that she ended up in a hospital on Guerrero Street.");
+    CarDealer.messages.Add("- Hahaha, what a story, Mark!");
     Message();
     Console.ReadKey();
     break;
