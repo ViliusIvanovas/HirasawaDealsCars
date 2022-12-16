@@ -74,11 +74,6 @@ Car prius = new Car("Toyota", "Prius", "Black", 2017, false, 120000);
 Car aygo = new Car("Toyota", "AYGO", "Silver", 2014, false, 80000);
 Car kaku = new Car("Kaku", "P-Model", "Metal", 2004, true, 2000000);
 
-User.carsAvailable.Add("2021 Porsche 911 GT3RS");
-User.carsAvailable.Add("2017 Toyota Prius");
-User.carsAvailable.Add("2014 Toyota AYGO");
-User.carsAvailable.Add("2004 Kaku P-Model");
-
 #endregion
 
 //Choice: model room
@@ -108,13 +103,27 @@ switch (inputKey)
         {
         messages.Add("The Kaku P-Model\u2014an excellent choice, I must say! She was made in Malaysia, and that mighty engine of hers is above the competition!");
         messages.Add("What in particular would you like to know about?");
+        messages.Add("1.Brand");
+        messages.Add("2. Model");
+        messages.Add("3. Color");
+        messages.Add("4. Year");
+        messages.Add("5. Unlock car");
+        messages.Add("6. Buy (" + kaku.price +")" );    
+        Message();
+
+//1: This car belongs to the brand [brand].
+//2: The [model] is an excellent choice! 
+//3: The car is the color [color].
+//4: This model was released in the year [year].
+//5: (You hear a click) And there we go, I've unlocked the car for you! / (You once again hear a click) And now it's locked again!
+//6: (Chevron hands you a key.) You're now the proud owner of a [brand + model]! Now, go for a ride and show the world what you were made for!
+
         break;
         }
 
         case ConsoleKey.D2:
         {
-        messages.Add("The Kaku P-Model\u2014an excellent choice, I must say! She was made in Malaysia, and that mighty engine of hers is above the competition!");
-        messages.Add("What in particular would you like to know about?");
+        
         break;
         }
 
@@ -135,6 +144,14 @@ switch (inputKey)
     messages.Add("A \"pew\" is the last thing you hear before falling to the ground...");
     Message();
     Console.ReadKey();
+    Thread.Sleep(5000);
+    Console.Title = "£}031s";
+    messages.Add("You wake up in a strange world... \n \n");
+    Console.ForegroundColor = ConsoleColor.DarkRed;
+    messages.Add("- People are very strange these days. I used to know a girl, she had a dozen guys. One of them found out about it, beat her so bad that she ended up in a hospital on Guerrero Street.");
+    messages.Add("- Hahaha, what a story, Mark!");
+    Message();
+    Console.ReadKey();
     }
     break;
     #endregion
@@ -144,6 +161,7 @@ switch (inputKey)
 }
 
 //Start new game
+Console.ForegroundColor = ConsoleColor.White;
 Console.Title = "Another Game";
 messages.Add("This playthrough is over, but you can start another. Press a key to do so.");
 Message();
