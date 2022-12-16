@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\caspe\\.nuget\\packages\\": {}
+    "C:\\Users\\Vilius\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\caspe\\Desktop\\Program\\HirasawaDealsCars merge\\HirasawaDealsCars\\HirasawaDealsCars.csproj",
+      "projectUniqueName": "C:\\Users\\Vilius\\Documents\\Projects\\HirasawaDealsCars\\HirasawaDealsCars.csproj",
       "projectName": "HirasawaDealsCars",
-      "projectPath": "C:\\Users\\caspe\\Desktop\\Program\\HirasawaDealsCars merge\\HirasawaDealsCars\\HirasawaDealsCars.csproj",
-      "packagesPath": "C:\\Users\\caspe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\caspe\\Desktop\\Program\\HirasawaDealsCars merge\\HirasawaDealsCars\\obj\\",
+      "projectPath": "C:\\Users\\Vilius\\Documents\\Projects\\HirasawaDealsCars\\HirasawaDealsCars.csproj",
+      "packagesPath": "C:\\Users\\Vilius\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Vilius\\Documents\\Projects\\HirasawaDealsCars\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\caspe\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Vilius\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
