@@ -8,26 +8,20 @@ public class Transactions
 
     public static bool buyCar(Car car, Player payer)
     {
-        bool success;
-
-        if (payer.balance > car.price)
+        if (payer.balance >= car.price)
         {
             payer.balance = payer.balance - car.price;
-            Console.WriteLine(car.price + " Deducted from your balance");
-            Console.WriteLine(payer.balance + " Is all you have left");
 
-            payer.ownedCars.Add(car);
+            Player.makeOwner(car, payer);
 
-            success = true;
+            return true;
         }
         else
         {
-            Console.WriteLine("Fail");
-            success = false;
+            return false;
         }
-
-        return success;
     }
+
 
     #endregion
 }
